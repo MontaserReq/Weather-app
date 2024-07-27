@@ -1,0 +1,105 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 75px;
+    width: 70%;
+    margin: 40px auto;
+    background-color: lightgray;
+    padding: 15px 0px;
+    text-align: center;
+    border-radius: 10px;
+    background-image: url('./Blue\ Minimalist\ Weather\ Forecast\ Instagram\ Story.svg');
+    background-size: cover;
+    transition: 0.5s ease-in;
+    align-items: center;
+}
+
+/* First Section */
+.weaher-search {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 40px;
+    max-width: 70%;
+    
+}
+
+.weaher-search input {
+    border: none;
+    border-radius: 10px;
+    width: 370px;
+    height: 35px;
+    padding: 15px;
+    outline: none;
+    background-color: white;
+}
+
+.weaher-search button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.weaher-search button .fa-magnifying-glass {
+    padding: 10px;
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    color: rgba(0, 0, 0, 0.485);
+}
+
+/* Middle Section */
+.weather-state {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.weather-state img {
+    width: 200px;
+}
+
+.weather-state h1,
+.weather-state p {
+    width: 450px;
+    color: white;
+    padding: 10px;
+    font-size: 30px;    
+}
+
+/* Last Section */
+.weaher-speed {
+    display: flex;
+    gap: 100px;
+}
+
+.weaher-speed .weather-humidity,
+.weaher-speed .weather-wind {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.weaher-speed .weather-humidity .state-humidity,
+.weaher-speed .weather-wind .state-wind {
+    color: white;
+}
+
+.fa-wind,
+.fa-droplet {
+    color: white;
+    padding-right: 10px;
+}
