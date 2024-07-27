@@ -15,7 +15,7 @@
     padding: 15px 0px;
     text-align: center;
     border-radius: 10px;
-    background-image: url('/images/9c10faac8c54ffcb04d29d246b3990c0.jpg');
+    background-image: url('./images/9c10faac8c54ffcb04d29d246b3990c0.jpg');
     background-size: cover;
     transition: 0.5s ease-in;
     align-items: center;
@@ -101,4 +101,33 @@
 .fa-droplet {
     color: white;
     padding-right: 10px;
+}
+
+@media (max-width:523px) {
+    .weaher-search {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .weaher-search input {
+        width: 250px;
+    }
+
+    .weaher-speed {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media (max-width:607px) {
+    .weather-state p {
+        display: flex;
+        justify-content: center;
+        width: 100px;
+        text-align: center;
+        align-items: center;
+
+    }
 }
