@@ -16,7 +16,7 @@
     padding: 15px 0px;
     text-align: center;
     border-radius: 10px;
-    background-image: url('images/Blue\ Minimalist\ Weather\ Forecast\ Instagram\ Story.svg');
+    background-image: url('/images/img.svg');
     background-size: cover;
     transition: 0.5s ease-in;
     align-items: center;
@@ -31,7 +31,7 @@
     align-items: center;
     margin-bottom: 40px;
     max-width: 70%;
-    
+
 }
 
 .weaher-search input {
@@ -76,7 +76,7 @@
     width: 450px;
     color: white;
     padding: 10px;
-    font-size: 30px;    
+    font-size: 30px;
 }
 
 /* Last Section */
