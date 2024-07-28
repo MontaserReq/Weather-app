@@ -10,12 +10,11 @@
     flex-direction: column;
     justify-content: center;
     gap: 75px;
-    width: 70%;
+    width: 50%;
     margin: 40px auto;
     padding: 15px 0px;
     text-align: center;
     border-radius: 10px;
-    /* background-image: url('./images/9c10faac8c54ffcb04d29d246b3990c0.jpg'); */
     background-size: cover;
     transition: 0.5s ease-in;
     align-items: center;
@@ -36,7 +35,7 @@
 .weaher-search input {
     border: none;
     border-radius: 10px;
-    width: 370px;
+    width: 500px;
     height: 35px;
     padding: 15px;
     outline: none;
@@ -72,7 +71,7 @@
 
 .weather-state h1,
 .weather-state p {
-    width: 450px;
+    width: 250px;
     color: white;
     padding: 10px;
     font-size: 30px;
@@ -103,8 +102,8 @@
     padding-right: 10px;
 }
 
-@media (max-width:523px) {
-    .weaher-search {
+ @media (max-width:523px) {
+   .weaher-search {
         display: flex;
         flex-direction: column;
         gap: 30px;
@@ -113,39 +112,35 @@
     .weaher-search input {
         width: 250px;
     }
-
-    .weaher-speed {
+    .weather-state p{
+        width: 300px;
         display: flex;
-        /* flex-direction: column; */
-        margin-top: 10px;
-        gap: 30px;
-    }
-}
-
-@media (max-width:607px) {
-    .weather-state p {
-        display: flex;
-        justify-content: center;
-        width: 100px;
         text-align: center;
         align-items: center;
-
-    }
-    .container{
         justify-content: center;
-        height: 200%;
-        gap: 10px;
-        width: 100%;
-        min-width: 276;
+    }
 
+}
+
+@media (max-width:450px) {
+    .weaher-speed  {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+}
+    .container{
+    width: 100%  ;
+        text-align: center;
     }
 }
 @media (max-width:612px){
     .container{
-        display: flex;
-        height: 300%;
-        gap: 10px;
-        text-align: center;
-        min-width: 276px;
+        gap: 0px;
+        min-width : 367px;
+        padding: 10px 0px;
+        width: 100% ;
+        margin: 40px  0px 0px  ;
+        
     }
-}
+    } 
