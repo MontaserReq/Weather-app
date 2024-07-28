@@ -10,7 +10,7 @@ const image = document.querySelector('.weather-state .weaher-icon');
 async function checkWeather(city) {
     try {
         const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
-        
+
         if (!response.ok) { // Check if the response is successful
             throw new Error('City not found');
         }
@@ -53,7 +53,7 @@ async function checkWeather(city) {
         document.querySelector(".weather-state p").innerHTML = 'City not found';
         document.querySelector(".state-humidity h1").innerHTML = '';
         document.querySelector(".state-wind h1").innerHTML = '';
-        image.src = "/images/Neon Green Error Message UI Funny Meme.png"; // Error image
+        image.src = "images/Cross.png"; // Error image
     }
 }
 
