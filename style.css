@@ -131,11 +131,21 @@
         align-items: center;
 
     }
+    .container{
+        justify-content: center;
+        height: 200%;
+        gap: 10px;
+        width: 100%;
+        min-width: 276;
+
+    }
 }
 @media (max-width:612px){
     .container{
-        height: 650px;
-        gap: 20px;
-        margin: 15px auto ;
+        display: flex;
+        height: 300%;
+        gap: 10px;
+        text-align: center;
+        min-width: 276px;
     }
 }
