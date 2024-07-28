@@ -116,8 +116,9 @@
 
     .weaher-speed {
         display: flex;
-        flex-direction: column;
-        gap: 20px;
+        /* flex-direction: column; */
+        margin-top: 10px;
+        gap: 30px;
     }
 }
 
@@ -129,5 +130,12 @@
         text-align: center;
         align-items: center;
 
+    }
+}
+@media (max-width:612px){
+    .container{
+        height: 650px;
+        gap: 20px;
+        margin: 15px auto ;
     }
 }
