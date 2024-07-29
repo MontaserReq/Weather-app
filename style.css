@@ -11,7 +11,7 @@
     justify-content: center;
     gap: 75px;
     width: 50%;
-    margin: 40px auto;
+    margin: 30px auto;
     padding: 15px 0px;
     text-align: center;
     border-radius: 10px;
@@ -41,7 +41,9 @@
     outline: none;
     background-color: white;
 }
-
+.weaher-search input:focus{
+    background-color: white;
+}
 .weaher-search button {
     background-color: transparent;
     border: none;
@@ -69,9 +71,14 @@
     width: 200px;
 }
 
-.weather-state h1,
-.weather-state p {
+.weather-state h1{
     width: 250px;
+    color: white;
+    padding: 10px;
+    font-size: 30px;
+}
+.weather-state p {
+    width: 450px;
     color: white;
     padding: 10px;
     font-size: 30px;
@@ -102,8 +109,8 @@
     padding-right: 10px;
 }
 
- @media (max-width:523px) {
-   .weaher-search {
+@media (max-width:523px) {
+    .weaher-search {
         display: flex;
         flex-direction: column;
         gap: 30px;
@@ -112,7 +119,8 @@
     .weaher-search input {
         width: 250px;
     }
-    .weather-state p{
+
+    .weather-state p {
         width: 300px;
         display: flex;
         text-align: center;
@@ -123,24 +131,35 @@
 }
 
 @media (max-width:450px) {
-    .weaher-speed  {
+    .weaher-speed {
         display: flex;
         justify-content: center;
         flex-direction: column;
         gap: 20px;
-}
-    .container{
-    width: 100%  ;
+    }
+
+    .container {
+        width: 100%;
         text-align: center;
     }
 }
-@media (max-width:612px){
-    .container{
+
+@media (max-width:676px) {
+    .container {
         gap: 0px;
-        min-width : 367px;
+        min-width: 367px;
         padding: 10px 0px;
-        width: 100% ;
-        margin: 40px  0px 0px  ;
-        
+        width: 100%;
+        margin: 40px 0px 0px;
+
     }
-    } 
+}
+@media (max-width:864px){
+    .weather-state p {
+        width: 300px;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+}
